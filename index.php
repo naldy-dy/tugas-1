@@ -1,15 +1,19 @@
 <?php
 
+
+// all class
 class Hewan {
 	public $jumlah_kaki, $bisa_terbang, $suara;
 }
-
+	// class kucing
 class Kucing {
 	function bersuara(){
 		return $this->suara;
 	}
 }
 
+
+// input kucing
 $momo = new Kucing;
 $momo->jumlah_kaki = 4;
 echo "Momo Adalah Kucing <br>";
@@ -21,12 +25,14 @@ echo "Suaranya : ".$momo->bersuara()."<br>";
 
 echo "<hr>";
 
+
+// class anjing
 class Anjing {
 	function bersuara(){
 		return $this->suara;
 	}
 }
-
+// input anjing
 $doggo = new Anjing;
 $doggo->jumlah_kaki = 4;
 echo "Doggo Adalah Anjing <br>";
@@ -38,12 +44,14 @@ echo "Suaranya : ".$doggo->bersuara();
 
 echo "<hr>";
 
+
+// class elang
 class  Elang{
 	function bersuara(){
 		return $this->suara;
 	}
 }
-
+// input elang
 $zya = new Elang;
 $zya->jumlah_kaki = 2;
 echo "Zya Adalah Elang <br>";
@@ -55,12 +63,16 @@ echo "Suaranya : ".$zya->bersuara();
 
 echo "<hr>";
 
+
+
+// class angsa
 class  Angsa{
 	function bersuara(){
 		return $this->suara;
 	}
 }
 
+// input angsa
 $masha = new Angsa;
 $masha->jumlah_kaki = 2;
 echo "Masha Adalah Angsa <br>";
