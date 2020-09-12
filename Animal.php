@@ -2,21 +2,122 @@
 
 	class Hewan{
 
+		public $jumlah_kaki, $terbang, $suara;
+			
 	}
 
 
-// class kucing
+// status kaki
+	class kaki{
+	}
+	$kaki = new kaki;
+	$kaki->kaki2 = 2;
+	$kaki->kaki4 = 4;
+
+// status terbang
+	class terbang{
+			}
+		$terbang = new terbang;
+		$terbang->bisa = "Bisa Terbang";
+		$terbang->tidak = "Tidak Bisa Terbang";
+
+
+// ------------------------------------------------------------------
+
+
 	class Kucing{
-		function bersuara(){
-		return $this->jumlah_kaki;
+		public function bersuara(){
+			return $this->suara;
 		}
 	}
 
-
-	// input kucing
+	// input kucing******************************************
 	$momo = new Kucing;
-	$momo->jumlah_kaki = 4;
-	echo "$momo->bersuara()";
+	$momo->nama = ucwords("momo ");
+	$momo->suara = " miyau";
+
+	// echo kucing...........................................
+	echo $momo->nama. " adalah Kucing <br>";
+	echo "Memiliki Kaki Sebanyak " .$kaki->kaki2;
+	echo "<br>";
+	echo $terbang->tidak. "<br>";
+	echo $momo->nama." Memiliki suara" .$momo->bersuara();
+	echo "<hr>";
 
 
- ?>
+
+
+
+
+
+
+
+// --------------------------------------------------------------
+	class Anjing{
+		public function bersuara(){
+			return $this->suara;
+		}
+	}
+	// input anjing***********************************************
+	$doggo = new Anjing;
+	$doggo->nama = " Doggo ";
+	$doggo->suara = " Auggg Augg ";
+
+
+	// echo anjing................................................
+
+	echo $doggo->nama." Adalah Anjing <br>";
+	echo "Memiliki Kaki Sebanyak " .$kaki->kaki4;
+	echo "<br>";
+	echo $terbang->tidak. "<br>";
+	echo $doggo->nama." Memiliki suara" .$doggo->bersuara();
+	echo "<hr>";
+
+
+
+// --------------------------------------------------------------
+
+
+	class Elang{
+		public function bersuara(){
+			return $this->suara;
+		}
+	}
+	// input anjing***********************************************
+	$zya = new Elang;
+	$zya->nama = " Zya ";
+	$zya->suara = " nyiiippp ";
+
+
+	// echo Elang................................................
+
+	echo $zya->nama." Adalah Elang <br>";
+	echo "Memiliki Kaki Sebanyak " .$kaki->kaki2;
+	echo "<br>";
+	echo $terbang->bisa. "<br>";
+	echo $zya->nama." Memiliki suara" .$zya->bersuara();
+	echo "<hr>";
+
+
+	// --------------------------------------------------------------
+
+
+	class Angsa{
+		public function bersuara(){
+			return $this->suara;
+		}
+	}
+	// input anjing***********************************************
+	$Masha = new Angsa;
+	$Masha->nama = " Masha ";
+	$Masha->suara = " kwaaak ";
+
+
+	// echo Elang................................................
+
+	echo $Masha->nama." Adalah Angsa <br>";
+	echo "Memiliki Kaki Sebanyak " .$kaki->kaki2;
+	echo "<br>";
+	echo $terbang->bisa. "<br>";
+	echo $Masha->nama." Memiliki suara" .$Masha->bersuara();
+	echo "<hr>";
