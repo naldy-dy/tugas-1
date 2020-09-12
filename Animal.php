@@ -7,8 +7,8 @@
 	class kaki{
 	}
 	$jumlah_kaki = new kaki;
-	$jumlah_kaki->kaki2 = 2;
-	$jumlah_kaki->kaki4 = 4;
+	$jumlah_kaki->kaki2 = "Memiliki kaki sebanyak : 2";
+	$jumlah_kaki->kaki4 = "Memiliki kaki sebanyak : 4";
 
 // status terbang
 	class terbang{
@@ -30,7 +30,7 @@
 
 	// echo kucing...........................................
 	echo $momo->nama. " adalah Kucing <br>";
-	echo "Memiliki Kaki Sebanyak " .$jumlah_kaki->kaki2;
+	echo $jumlah_kaki->kaki2;
 	echo "<br>";
 	echo $terbang->tidak. "<br>";
 	echo $momo->nama." Memiliki suara" .$momo->bersuara();
@@ -48,7 +48,7 @@
 	$doggo->suara = " Auggg Augg ";
 	// echo anjing................................................
 	echo $doggo->nama." Adalah Anjing <br>";
-	echo "Memiliki Kaki Sebanyak " .$jumlah_kaki->kaki4;
+	echo $jumlah_kaki->kaki4;
 	echo "<br>";
 	echo $terbang->tidak. "<br>";
 	echo $doggo->nama." Memiliki suara" .$doggo->bersuara();
@@ -66,7 +66,7 @@
 	$zya->suara = " nyiiippp ";
 	// echo Elang................................................
 	echo $zya->nama." Adalah Elang <br>";
-	echo "Memiliki Kaki Sebanyak " .$jumlah_kaki->kaki2;
+	echo $jumlah_kaki->kaki2;
 	echo "<br>";
 	echo $terbang->bisa. "<br>";
 	echo $zya->nama." Memiliki suara" .$zya->bersuara();
@@ -85,7 +85,7 @@
 	$Masha->suara = " kwaaak ";
 	// echo Elang................................................
 	echo $Masha->nama." Adalah Angsa <br>";
-	echo "Memiliki Kaki Sebanyak " .$jumlah_kaki->kaki2;
+	echo $jumlah_kaki->kaki2;
 	echo "<br>";
 	echo $terbang->bisa. "<br>";
 	echo $Masha->nama." Memiliki suara" .$Masha->bersuara();
