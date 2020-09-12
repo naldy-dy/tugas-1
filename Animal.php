@@ -1,12 +1,8 @@
 <?php 
 
 	class Hewan{
-
-		public $jumlah_kaki, $terbang, $suara;
-			
+		public $jumlah_kaki, $terbang, $suara;	
 	}
-
-
 // status kaki
 	class kaki{
 	}
@@ -21,16 +17,12 @@
 		$terbang->bisa = "Bisa Terbang";
 		$terbang->tidak = "Tidak Bisa Terbang";
 
-
 // ------------------------------------------------------------------
-
-
 	class Kucing{
 		public function bersuara(){
 			return $this->suara;
 		}
 	}
-
 	// input kucing******************************************
 	$momo = new Kucing;
 	$momo->nama = ucwords("momo ");
@@ -44,14 +36,6 @@
 	echo $momo->nama." Memiliki suara" .$momo->bersuara();
 	echo "<hr>";
 
-
-
-
-
-
-
-
-
 // --------------------------------------------------------------
 	class Anjing{
 		public function bersuara(){
@@ -62,10 +46,7 @@
 	$doggo = new Anjing;
 	$doggo->nama = " Doggo ";
 	$doggo->suara = " Auggg Augg ";
-
-
 	// echo anjing................................................
-
 	echo $doggo->nama." Adalah Anjing <br>";
 	echo "Memiliki Kaki Sebanyak " .$kaki->kaki4;
 	echo "<br>";
@@ -73,11 +54,7 @@
 	echo $doggo->nama." Memiliki suara" .$doggo->bersuara();
 	echo "<hr>";
 
-
-
 // --------------------------------------------------------------
-
-
 	class Elang{
 		public function bersuara(){
 			return $this->suara;
@@ -87,10 +64,7 @@
 	$zya = new Elang;
 	$zya->nama = " Zya ";
 	$zya->suara = " nyiiippp ";
-
-
 	// echo Elang................................................
-
 	echo $zya->nama." Adalah Elang <br>";
 	echo "Memiliki Kaki Sebanyak " .$kaki->kaki2;
 	echo "<br>";
@@ -100,8 +74,6 @@
 
 
 	// --------------------------------------------------------------
-
-
 	class Angsa{
 		public function bersuara(){
 			return $this->suara;
@@ -111,10 +83,7 @@
 	$Masha = new Angsa;
 	$Masha->nama = " Masha ";
 	$Masha->suara = " kwaaak ";
-
-
 	// echo Elang................................................
-
 	echo $Masha->nama." Adalah Angsa <br>";
 	echo "Memiliki Kaki Sebanyak " .$kaki->kaki2;
 	echo "<br>";
